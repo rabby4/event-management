@@ -1,23 +1,23 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { IoArrowUndoOutline } from 'react-icons/io5';
+import { FaUserCog } from 'react-icons/fa';
 
 const Event = () => {
     const events = useLoaderData()
     const { id } = useParams()
     const event = events?.find(event => event.id === id)
-    console.log(id)
-    console.log(event)
+
     return (
         <div className="max-w-7xl mx-auto">
             <div className="my-20">
-                <Link><button className="flex items-center gap-2 text-lg font-semibold hover:text-red-600"><IoArrowUndoOutline></IoArrowUndoOutline>All Events</button></Link>
+                <Link to='/events'><button className="flex items-center gap-2 text-lg font-semibold hover:text-red-600"><IoArrowUndoOutline></IoArrowUndoOutline>All Events</button></Link>
             </div>
             <div>
                 <div>
                     <h2 className="text-6xl font-bold italic">{event.title}</h2>
                     <div className="flex justify-between items-center my-8">
                         <p>{event.stDate} - {event.endDate}</p>
-                        <button className="btn">Buy Ticket</button>
+                        <button className="btn bg-red-700 text-white font-semibold hover:bg-red-600 px-8">Buy Ticket</button>
                     </div>
                 </div>
                 <div className="max-w-5xl">
@@ -30,7 +30,7 @@ const Event = () => {
                 <div>
                     <h2 className="text-3xl font-semibold">Event Details:</h2>
                 </div>
-                <div className="grid grid-cols-3 my-10">
+                <div className="grid grid-cols-4 my-10">
                     <div>
                         <h2 className="font-bold text-base">Start</h2>
                         <p>{event.stDate}</p>
@@ -42,8 +42,7 @@ const Event = () => {
                         <p>${event.price}</p>
                     </div>
                     <div>
-                        <h2 className="font-bold text-base">Organizer</h2>
-                        <p>{event.orgName}</p>
+
                         <div className="my-5">
                             <h2 className="font-bold text-base">Phone</h2>
                             <p>{event.phone}</p>
@@ -56,9 +55,14 @@ const Event = () => {
                         <p>Motion Theater</p>
                         <p>{event.location}</p>
                     </div>
+                    <div className="p-8 shadow-lg">
+                        <h2 className="flex items-center gap-3 font-bold text-xl bg-red-600 p-3 rounded text-white"><FaUserCog></FaUserCog> Event Organized By</h2>
+                        <img src={event.orgImg} alt="" className="my-5 rounded" />
+                        <p className="text-center text-xl font-bold">{event.orgName}</p>
+                    </div>
                 </div>
             </div>
-            <div className="mb-10">
+            <div className="mb-20">
                 <h2 className="text-3xl font-semibold">Sponsors:</h2>
                 <div className="grid grid-cols-4 items-center justify-items-start my-5 sponsorImg">
                     {

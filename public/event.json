@@ -24,12 +24,12 @@
       "location": "233 Main St Los Angeles, United States",
       "price": "85",
       "category": "Magic Show",
-      "email": "jhon@email.com",
+      "email": "lily@email.com",
       "phone": "+098 765 4321",
       "stDate": "April 12, 2025",
       "endDate": "April 18, 2025",
       "day": "sat",
-      "orgName": "Example Organizer 2",
+      "orgName": "Victoria Lily",
       "orgImg": "https://i.ibb.co/zH9g0sP/speaker-2.png",
       "spnsrImg": ["https://i.ibb.co/7JFmghx/sponsor1.png", "https://i.ibb.co/N96wY3w/sponsor3.png"]
     },
@@ -46,7 +46,7 @@
       "stDate": "December 15, 2023",
       "endDate": "January 2, 2024",
       "day": "fri",
-      "orgName": "Example Organizer 3",
+      "orgName": "Devid Millar",
       "orgImg": "https://i.ibb.co/6DLv3qy/speaker-3.png",
       "spnsrImg": ["https://i.ibb.co/BKK9vb3/sponsor4.png", "https://i.ibb.co/N96wY3w/sponsor3.png"]
     },
@@ -63,7 +63,7 @@
       "stDate": "January 15, 2024",
       "endDate": "January 16, 2024",
       "day": "thu",
-      "orgName": "Example Organizer 4",
+      "orgName": "Tylor Latham",
       "orgImg": "https://i.ibb.co/zQHDSgD/speaker-1.png",
       "spnsrImg": ["https://i.ibb.co/N96wY3w/sponsor3.png", "https://i.ibb.co/7JFmghx/sponsor1.png"]
     },
@@ -75,12 +75,12 @@
       "location": "422 Main St Miami, United States",
       "price": "100",
       "category": "Comedy",
-      "email": "devid@email.com",
+      "email": "emilia@email.com",
       "phone": "+234 567 8901",
       "stDate": "October 30, 2023",
       "endDate": "November 2, 2023",
       "day": "mon",
-      "orgName": "Example Organizer 5",
+      "orgName": "Hannah Emilia",
       "orgImg": "https://i.ibb.co/zH9g0sP/speaker-2.png",
       "spnsrImg": ["https://i.ibb.co/7JFmghx/sponsor1.png", "https://i.ibb.co/BKK9vb3/sponsor4.png"]
     },
@@ -97,7 +97,7 @@
       "stDate": "November 10, 2023",
       "endDate": "November 10, 2023",
       "day": "sun",
-      "orgName": "Example Organizer 5",
+      "orgName": "Abraham Maslow",
       "orgImg": "https://i.ibb.co/6DLv3qy/speaker-3.png",
       "spnsrImg": ["https://i.ibb.co/RSLYp4v/sponsor2.png", "https://i.ibb.co/N96wY3w/sponsor3.png"]
     }

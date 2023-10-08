@@ -33,7 +33,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto my-24">
+            <div className="max-w-7xl mx-auto mb-24">
                 <div>
                     <h5 className="text-red-600 text-center text-3xl font-semibold mb-4">Event</h5>
                     <h2 className="text-5xl text-center font-bold mb-16 uppercase italic">Upcoming events</h2>
@@ -52,11 +52,11 @@ const Home = () => {
                                         <div>
                                             <p>{event.stDate} - {event.endDate}</p>
                                             <h2 className="text-2xl font-bold my-2">{event.title}</h2>
-                                            <p>{event.description.slice(0, 150)}</p>
+                                            <p>{event.description.slice(0, 220)}...</p>
                                         </div>
                                     </div>
                                     <div className="flex justify-between py-5">
-                                        <h2 className="text-lg font-bold">Cost: $100</h2>
+                                        <h2 className="text-lg font-bold">Cost: ${event.price}</h2>
                                         <Link to={`/event/${event.id}`}><button className="text-base flex items-center gap-2 font-semibold hover:text-red-600">View Details <BsArrowRight></BsArrowRight></button></Link>
                                     </div>
                                 </div>

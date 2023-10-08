@@ -34,7 +34,8 @@ const Router = createBrowserRouter([
             },
             {
                 path: '/event/:id',
-                element: <Event></Event>
+                element: <Event></Event>,
+                loader: () => fetch('/event.json')
             }
         ]
     },

@@ -1,7 +1,7 @@
 [
     {
       "id": "1",
-      "title": "Big Music Awards",
+      "title": "The Biggest Dance Awards Show",
       "img" : "https://i.ibb.co/kBSckMj/ballet-1657522.jpg",
       "description": " It is one of the most anticipated events in the music industry, and it is known for its glamorous red carpet, star-studded performances, and unforgettable moments. The Big Music Awards are presented in a variety of categories, including Artist of the Year, Song of the Year, Album of the Year, and Best New Artist. The nominees are selected by a panel of industry experts, and the winners are voted on by fans from around the world.The Big Music Awards are more than just an awards show. They are also a celebration of music and its power to unite people from all walks of life. The show features performances by some of the biggest names in music, and it is a must-watch event for any music lover. Here is a possible description for your Big Music Awards program: The Big Music Awards is the most prestigious and anticipated awards show in the music industry. Honoring the greatest artists and innovators of our time, the Big Music Awards is a celebration of music and its power to unite people from all walks of life.This year's Big Music Awards promises to be the biggest and best yet, with star-studded performances, unforgettable moments, and the crowning of the most talented musicians in the world. Tune in to the Big Music Awards on [date] to see who takes home the top honors and experience the magic of music firsthand.",
       "location": "433 Main St New York, United States",
@@ -14,16 +14,16 @@
       "day": "fri",
       "orgName": "Nick Sims",
       "orgImg": "https://i.ibb.co/zQHDSgD/speaker-1.png",
-      "spnsrImg": ["sponsor_logo1.png", "sponsor_logo2.png", "sponsor_logo3.png"]
+      "spnsrImg": ["https://i.ibb.co/N96wY3w/sponsor3.png", "https://i.ibb.co/BKK9vb3/sponsor4.png"]
     },
     {
       "id": "2",
-      "title": "The Isley Brothers",
+      "title": "The Isley Brothers Magic Show",
       "img" : "https://i.ibb.co/tzfGDcd/8572554800-5aff0cf960-o.jpg",
       "description": "The Isley Brothers are one of the most enduring and successful groups in music history. With a career spanning over six decades, they have sold over 100 million records worldwide and have been inducted into the Rock and Roll Hall of Fame and the Vocal Group Hall of Fame. The Isley Brothers are known for their innovative and eclectic sound, which blends elements of soul, funk, R&B, and rock. They have released numerous hit singles, including Twist and Shout,This Old Heart of Mine (Is Weak for You),That Lady,Contagious, and Footsteps in the Dark. The Isley Brothers are also known for their dynamic and engaging live performances. They have toured the world extensively and have performed at some of the most iconic venues in music, including Madison Square Garden, the Apollo Theater, and the Wembley Stadium. The Isley Brothers are true legends of music. They have inspired generations of musicians with their innovative sound, timeless songs, and electrifying live performances. Join us for a special theater program honoring the incredible career of The Isley Brothers. This one-night event will feature a retrospective of their greatest hits, behind-the-scenes stories, and exclusive interviews with the brothers themselves. Don't miss this chance to see one of the most iconic groups in music history live on stage. Get your tickets today! ",
       "location": "233 Main St Los Angeles, United States",
       "price": "85",
-      "category": "Festival",
+      "category": "Magic Show",
       "email": "jhon@email.com",
       "phone": "+098 765 4321",
       "stDate": "April 12, 2025",
@@ -31,11 +31,11 @@
       "day": "sat",
       "orgName": "Example Organizer 2",
       "orgImg": "https://i.ibb.co/zH9g0sP/speaker-2.png",
-      "spnsrImg": ["sponsor_logo1.png", "sponsor_logo2.png", "sponsor_logo3.png"]
+      "spnsrImg": ["https://i.ibb.co/7JFmghx/sponsor1.png", "https://i.ibb.co/N96wY3w/sponsor3.png"]
     },
     {
       "id": "3",
-      "title": "June Historic Tour",
+      "title": "The famous June Historic Tour Drama",
       "img" : "https://i.ibb.co/x8Q594B/dfs84358hfg8.jpg",
       "description": "Step back in time and experience the rich history of Chicago on our June Historic Tour. This drama program will bring to life the stories of the people and events that shaped the city into what it is today. The tour will begin at the [landmark name], one of the oldest and most iconic buildings in [city name]. From there, we will travel to other historic sites, including the [landmark name], [landmark name], and [landmark name]. At each stop, our talented actors will perform scenes that depict the lives of the people who lived and worked in these places. You will learn about the challenges and triumphs of the city's early settlers, the role it played in the Civil War, and the industrial boom that transformed it into a major metropolis. The June Historic Tour is a unique and educational experience that is perfect for people of all ages. Whether you are a lifelong resident of [city name] or a visitor from afar, you will learn something new and appreciate the city's history even more.",
       "location": "423 Main St Chicago, United States",
@@ -48,7 +48,7 @@
       "day": "fri",
       "orgName": "Example Organizer 3",
       "orgImg": "https://i.ibb.co/6DLv3qy/speaker-3.png",
-      "spnsrImg": ["sponsor_logo1.png", "sponsor_logo2.png", "sponsor_logo3.png"]
+      "spnsrImg": ["https://i.ibb.co/BKK9vb3/sponsor4.png", "https://i.ibb.co/N96wY3w/sponsor3.png"]
     },
     {
       "id": "4",
@@ -65,13 +65,13 @@
       "day": "thu",
       "orgName": "Example Organizer 4",
       "orgImg": "https://i.ibb.co/zQHDSgD/speaker-1.png",
-      "spnsrImg": ["sponsor_logo1.png", "sponsor_logo2.png", "sponsor_logo3.png"]
+      "spnsrImg": ["https://i.ibb.co/N96wY3w/sponsor3.png", "https://i.ibb.co/7JFmghx/sponsor1.png"]
     },
     {
       "id": "5",
-      "title": "Example Event 5",
+      "title": "A Streetcar Named Desire",
       "img" : "https://i.ibb.co/vhrGwGC/8020795879-04c1f2f0c1-o-860x482.jpg",
-      "description": "456789",
+      "description": "It is known for its glamorous red carpet, star-studded performances, and unforgettable moments. The Big Music Awards are presented in a variety of categories, including Artist of the Year, Song of the Year, Album of the Year, and Best New Artist. The nominees are selected by a panel of industry experts, and the winners are voted on by fans from around the world.The Big Music Awards are more than just an awards show. They are also a celebration of music and its power to unite people from all walks of life. The show features performances by some of the biggest names in music, and it is a must-watch event for any music lover. Here is a possible description for your Big Music Awards program: The Big Music Awards is the most prestigious and anticipated awards show in the music industry. Honoring the greatest artists and innovators of our time, the Big Music Awards is a celebration of music and its power to unite people from all walks of life.This year's Big Music Awards promises to be the biggest and best yet, with star-studded performances, unforgettable moments, and the crowning of the most talented musicians in the world. Tune in to the Big Music Awards on [date] to see who takes home the top honors and experience the magic of music firsthand.",
       "location": "422 Main St Miami, United States",
       "price": "100",
       "category": "Comedy",
@@ -82,13 +82,13 @@
       "day": "mon",
       "orgName": "Example Organizer 5",
       "orgImg": "https://i.ibb.co/zH9g0sP/speaker-2.png",
-      "spnsrImg": ["sponsor_logo1.png", "sponsor_logo2.png", "sponsor_logo3.png"]
+      "spnsrImg": ["https://i.ibb.co/7JFmghx/sponsor1.png", "https://i.ibb.co/BKK9vb3/sponsor4.png"]
     },
     {
       "id": "6",
-      "title": "Example Event 6",
+      "title": "Tribal dance performance",
       "img" : "https://i.ibb.co/FDkvw5r/pexels-photo-195769-860x482.jpg",
-      "description": "456789",
+      "description": "This dance program will bring to life the stories of the people and events that shaped the city into what it is today. The tour will begin at the [landmark name], one of the oldest and most iconic buildings in [city name]. From there, we will travel to other historic sites, including the [landmark name], [landmark name], and [landmark name]. At each stop, our talented actors will perform scenes that depict the lives of the people who lived and worked in these places. You will learn about the challenges and triumphs of the city's early settlers, the role it played in the Civil War, and the industrial boom that transformed it into a major metropolis. The June Historic Tour is a unique and educational experience that is perfect for people of all ages. Whether you are a lifelong resident of [city name] or a visitor from afar, you will learn something new and appreciate the city's history even more.",
       "location": "422 Main St Miami, United States",
       "price": "80",
       "category": "Dance",
@@ -99,6 +99,6 @@
       "day": "sun",
       "orgName": "Example Organizer 5",
       "orgImg": "https://i.ibb.co/6DLv3qy/speaker-3.png",
-      "spnsrImg": ["sponsor_logo1.png", "sponsor_logo2.png", "sponsor_logo3.png"]
+      "spnsrImg": ["https://i.ibb.co/RSLYp4v/sponsor2.png", "https://i.ibb.co/N96wY3w/sponsor3.png"]
     }
   ]

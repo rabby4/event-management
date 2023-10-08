@@ -56,11 +56,11 @@ const Register = () => {
                         </label>
                     </div>
                     <div className="form-control">
-                        <button className="btn bg-red-700 hover:bg-red-600 text-white text-base">Login</button>
+                        <button className="btn bg-red-700 hover:bg-red-600 text-white text-base">Register</button>
                     </div>
                 </form>
                 <div>
-                    <p className='text-sm text-center mb-5'>Do not have an account? Please <Link to='/register'><strong className='text-red-600'>Register</strong></Link></p>
+                    <p className='text-sm text-center mb-5'>Do not have an account? Please <Link to='/login'><strong className='text-red-600'>login</strong></Link></p>
                 </div>
 
             </div>

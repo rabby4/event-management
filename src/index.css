@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    background-color: #b91c1c;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 20px;
+
+}
+
+li a {
+    margin: 0px 10px;
+    padding: 8px 20px;
+}
+
+.for-mobile li {
+    margin: 15px 0px;
+}
+
+.sponsorImg img {
+    transition: all 0.5s;
+}
+
+.sponsorImg img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

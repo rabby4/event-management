@@ -1,12 +1,13 @@
 import { BsArrowRight } from "react-icons/bs";
 import { Link, useLoaderData } from "react-router-dom";
+import Navbar from "../../shared/Navbar/Navbar";
 
 
 const Events = () => {
     const events = useLoaderData()
-    console.log(events)
     return (
         <div>
+            <Navbar></Navbar>
             <div className="max-w-7xl mx-auto my-24">
                 <div>
                     <h5 className="text-red-600 text-center text-3xl font-semibold mb-4">Event</h5>

@@ -1,5 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
 import { BsArrowRight } from 'react-icons/bs';
+import Navbar from "../../shared/Navbar/Navbar";
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
 
     return (
         <div>
+            <Navbar></Navbar>
             <div className="hero min-h-[850px]" style={{ backgroundImage: 'url(https://i.ibb.co/42cr9tH/8-1.jpg)' }}>
                 <div className=""></div>
                 <div className="hero-content text-center text-neutral-content">
@@ -41,7 +43,7 @@ const Home = () => {
                 <div className="grid grid-cols-3 gap-10">
                     {
                         events.map(event => <div key={event.id}>
-                            <div className="card card-compact bg-base-100 border border-gray-100">
+                            <div className="card card-compact border border-gray-200">
                                 <figure><img className="h-60" src={event.img} alt="" /></figure>
                                 <div className="card-body">
                                     <div className="flex gap-5">

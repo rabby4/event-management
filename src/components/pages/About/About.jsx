@@ -15,8 +15,8 @@ const About = () => {
                 </div>
             </div>
             <div className="max-w-7xl mx-auto py-24">
-                <div className="flex items-center gap-10">
-                    <div className="w-1/2">
+                <div className="flex items-center lg:flex-row md:flex-col-reverse flex-col-reverse gap-10 lg:px-0 md:px-10 px-5">
+                    <div className="lg:w-1/2 md:w-full w-full">
                         <p>The Motion Theater is a historic motion picture theater located in America. It was built in 1990 and is one of the oldest surviving theaters in the city. The theater was originally designed to show silent films, but it was converted to sound in [year].
 
                             The Motion Theater has played an important role in the cultural life of [city name] for over a century. It has hosted countless premieres, film festivals, and other special events. The theater has also been a popular venue for live performances, including concerts, plays, and comedy shows.
@@ -25,7 +25,7 @@ const About = () => {
 
                             In the 1930s and 1940s, the Motion Theater began to show Hollywood blockbusters, such as Gone with the Wind and The Wizard of Oz. The theater also hosted many of the biggest stars of the era, including Clark Gable, Judy Garland, and Bette Davis.</p>
                     </div>
-                    <div className="w-1/2">
+                    <div className="lg:w-1/2 md:w-full w-full">
                         <img src="https://i.ibb.co/Ttc6NW3/3-2.jpg" alt="" />
                     </div>
                 </div>
@@ -33,9 +33,9 @@ const About = () => {
             <div className="">
                 <div className="max-w-7xl mx-auto py-24">
                     <div>
-                        <h2 className="text-center text-5xl italic font-bold">Key Figures</h2>
+                        <h2 className="text-center lg:text-5xl md:text-4xl text-3xl italic font-bold">Key Figures</h2>
                     </div>
-                    <div className="grid grid-cols-4 gap-10 mt-14">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 mt-14 lg:px-0 md:px-10 px-5">
                         <div className="text-center">
                             <img src="https://i.ibb.co/bd7hBYz/e184h18dgf325-t.jpg" alt="" />
                             <h4 className="text-3xl italic mt-5">Bob Carnagy</h4>

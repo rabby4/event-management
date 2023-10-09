@@ -9,13 +9,13 @@ const Home = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="hero min-h-[850px]" style={{ backgroundImage: 'url(https://i.ibb.co/42cr9tH/8-1.jpg)' }}>
+            <div className="hero lg:min-h-[850px] min-h-[600px]" style={{ backgroundImage: 'url(https://i.ibb.co/42cr9tH/8-1.jpg)' }}>
                 <div className=""></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-7xl">
-                        <h1 className="mb-5 text-4xl font-normal uppercase tracking-[15px]">Main Party of this autumn</h1>
-                        <h1 className="mb-5 text-8xl font-bold uppercase tracking-[20px]">Light your night</h1>
-                        <h1 className="mb-5 text-4xl font-semibold uppercase tracking-[5px]">21 october 2023</h1>
+                        <h1 className="mb-5 lg:text-4xl md:text-3xl text-2xl font-normal uppercase lg:tracking-[15px] md:tracking-[8px]">Main Party of this autumn</h1>
+                        <h1 className="mb-5 lg:text-8xl md:text-6xl text-5xl font-bold uppercase lg:tracking-[20px] md:tracking-[10px] italic">Light your night</h1>
+                        <h1 className="mb-5 lg:text-4xl md:text-3xl text-2xl font-semibold uppercase tracking-[5px]">21 october 2023</h1>
                         <button className="btn mr-5 rounded-none bg-transparent text-white hover:text-black px-7">More Info</button>
                         <button className="btn ml-5 rounded-none bg-transparent text-white hover:text-black px-7">Buy Tickets</button>
                     </div>
@@ -25,7 +25,7 @@ const Home = () => {
                 <div className=""></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-2xl">
-                        <h1 className="mb-5 text-5xl text-black font-semibold italic">Welcome to <br /> The Motion Theater</h1>
+                        <h1 className="mb-5 md:text-5xl text-4xl text-black font-semibold italic">Welcome to <br /> The Motion Theater</h1>
                         <p className="mb-5 text-black">When thou shalt be disposed to set me light
                             And place my merit in the eye of scorn,Upon thy side against myself I’ll fight And prove thee virtuous, though thou art forsworn.With mine own weakness being best acquainted,Upon thy part I can set down a story Of faults conceal’d, wherein I am attainted, That thou in losing me shalt win much glory. </p>
                         <div className="flex justify-center">
@@ -35,12 +35,12 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto mb-24">
+            <div className="max-w-7xl mx-auto mb-24 px-10">
                 <div>
-                    <h5 className="text-red-600 text-center text-3xl font-semibold mb-4">Event</h5>
-                    <h2 className="text-5xl text-center font-bold mb-16 uppercase italic">Upcoming events</h2>
+                    <h5 className="text-red-600 text-center lg:text-3xl md:text-2xl text-xl font-semibold mb-4">Event</h5>
+                    <h2 className="lg:text-5xl md:text-4xl text-3xl text-center font-bold mb-16 uppercase italic">Upcoming events</h2>
                 </div>
-                <div className="grid grid-cols-3 gap-10" >
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 " >
                     {
                         events.map(event => <div key={event.id}>
                             <div className="card card-compact border border-gray-200" data-aos="fade-up">
@@ -53,8 +53,8 @@ const Home = () => {
                                         </div>
                                         <div>
                                             <p>{event.stDate} - {event.endDate}</p>
-                                            <h2 className="text-2xl font-bold my-2">{event.title}</h2>
-                                            <p>{event.description.slice(0, 220)}...</p>
+                                            <h2 className="md:text-2xl text-xl font-bold my-2">{event.title}</h2>
+                                            <p>{event.description.slice(0, 230)}...</p>
                                         </div>
                                     </div>
                                     <div className="flex justify-between py-5">
@@ -70,11 +70,11 @@ const Home = () => {
             <div>
                 <div className="max-w-7xl mx-auto my-24">
                     <div>
-                        <h5 className="text-red-600 text-center text-3xl font-semibold mb-4">Sponsor</h5>
-                        <h2 className="text-5xl text-center font-bold mb-16 uppercase italic">OFFICIAL SPONSOR</h2>
+                        <h5 className="text-red-600 text-center lg:text-3xl md:text-2xl text-xl font-semibold mb-4">Sponsor</h5>
+                        <h2 className="lg:text-5xl md:text-4xl text-3xl text-center font-bold mb-16 uppercase italic">OFFICIAL SPONSOR</h2>
 
                     </div>
-                    <div className="grid grid-cols-4 items-center justify-items-center sponsorImg">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 md:gap-10 gap-10 items-center justify-items-center sponsorImg">
                         <img className="" src="https://i.ibb.co/7JFmghx/sponsor1.png" alt="" />
                         <img className="" src="https://i.ibb.co/RSLYp4v/sponsor2.png" alt="" />
                         <img className="" src="https://i.ibb.co/N96wY3w/sponsor3.png" alt="" />

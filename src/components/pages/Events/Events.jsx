@@ -8,12 +8,12 @@ const Events = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="max-w-7xl mx-auto my-24">
+            <div className="max-w-7xl mx-auto my-24 px-10">
                 <div>
-                    <h5 className="text-red-600 text-center text-3xl font-semibold mb-4">Event</h5>
-                    <h2 className="text-5xl text-center font-bold mb-16 uppercase italic">Upcoming events</h2>
+                    <h5 className="text-red-600 text-center lg:text-3xl md:text-2xl text-xl font-semibold mb-4">Event</h5>
+                    <h2 className="lg:text-5xl md:text-4xl text-3xl text-center font-bold mb-16 uppercase italic">Upcoming events</h2>
                 </div>
-                <div className="grid grid-cols-3 gap-10">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
                     {
                         events.map(event => <div key={event.id}>
                             <div className="card card-compact bg-base-100 border border-gray-100">
@@ -26,7 +26,7 @@ const Events = () => {
                                         </div>
                                         <div>
                                             <p>{event.stDate} - {event.endDate}</p>
-                                            <h2 className="text-2xl font-bold my-2">{event.title}</h2>
+                                            <h2 className="md:text-2xl text-xl font-bold my-2">{event.title}</h2>
                                             <p>{event.description.slice(0, 220)}...</p>
                                         </div>
                                     </div>

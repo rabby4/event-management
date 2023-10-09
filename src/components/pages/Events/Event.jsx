@@ -11,20 +11,20 @@ const Event = () => {
     return (
         <>
             <Navbar></Navbar>
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto lg:px-0 md:px-10 px-5">
                 <div className="my-20">
                     <Link to='/events'><button className="flex items-center gap-2 text-lg font-semibold hover:text-red-600"><IoArrowUndoOutline></IoArrowUndoOutline>All Events</button></Link>
                 </div>
                 <div>
                     <div>
-                        <h2 className="text-6xl font-bold italic">{event.title}</h2>
+                        <h2 className="lg:text-6xl md:text-5xl text-4xl font-bold italic">{event.title}</h2>
                         <div className="flex justify-between items-center my-8">
                             <p>{event.stDate} - {event.endDate}</p>
                             <button className="btn bg-red-700 text-white font-semibold hover:bg-red-600 px-8">Buy Ticket</button>
                         </div>
                     </div>
                     <div className="max-w-5xl">
-                        <img className="w-full h-[550px]" src={event.img} alt="" />
+                        <img className="w-full lg:h-[550px] md:h-[450px]" src={event.img} alt="" />
 
                     </div>
                     <div className="my-10">
@@ -33,7 +33,7 @@ const Event = () => {
                     <div>
                         <h2 className="text-3xl font-semibold">Event Details:</h2>
                     </div>
-                    <div className="grid grid-cols-4 my-10">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 md:gap-10 my-10">
                         <div>
                             <h2 className="font-bold text-base">Start</h2>
                             <p>{event.stDate}</p>
@@ -67,7 +67,7 @@ const Event = () => {
                 </div>
                 <div className="mb-20">
                     <h2 className="text-3xl font-semibold">Sponsors:</h2>
-                    <div className="grid grid-cols-4 items-center justify-items-start my-5 sponsorImg">
+                    <div className="grid grid-cols-4 items-center justify-items-start my-5 sponsorImg lg:gap-0 md:gap-0 gap-10">
                         {
                             event.spnsrImg.map((img, indx) => <img key={indx} className="" src={img} alt="" />)
                         }

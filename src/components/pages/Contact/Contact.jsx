@@ -7,10 +7,10 @@ const Contact = () => {
             <Navbar></Navbar>
             <div className="max-w-7xl mx-auto py-24">
                 <div className="mb-10">
-                    <h2 className="text-center text-5xl italic font-bold">Contact with Us</h2>
+                    <h2 className="text-center lg:text-5xl md:text-4xl text-3xl italic font-bold">Contact with Us</h2>
                 </div>
-                <div className="flex gap-20 items-center">
-                    <div className="w-1/2">
+                <div className="flex gap-20 items-center lg:flex-row md:flex-col flex-col lg:px-0 md:px-10 px-5">
+                    <div className="lg:w-1/2 md:w-full w-full">
                         <div className="card flex-shrink-0 w-full shadow-xl mx-auto">
                             <form className="card-body">
                                 <div className="form-control mb-3">
@@ -47,7 +47,7 @@ const Contact = () => {
                             </form>
                         </div>
                     </div>
-                    <div>
+                    <div className="lg:w-1/2 md:w-full w-full">
                         <div className="card bg-base-100 shadow-xl">
                             <figure className="px-10 pt-10">
                                 <img src="https://i.ibb.co/47HSNqc/c-location.png" alt="Shoes" className="rounded-xl" />

@@ -21,7 +21,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 navigate(location?.state ? location.state : '/')
-                toast('Successfully logged in!')
+                toast.success('Successfully logged in!')
             })
             .catch(error => {
                 console.log(error)
@@ -81,7 +81,7 @@ const Login = () => {
                         </div>
                     </form>
                     <div>
-                        <p className='text-sm text-center mb-5'>Do not have an account? Please <Link to='/register'><strong className='text-red-600'>Register</strong></Link></p>
+                        <p className='text-sm text-center mb-5'>New in this website? Please <Link to='/register'><strong className='text-red-600'>Register</strong></Link></p>
                     </div>
                     <div className="px-10 mb-10">
                         <button onClick={googleLoginHandler} className='flex items-center w-full py-2 mt-3 border-2 border-gray-700 justify-center gap-2 rounded-md hover:text-red-600 hover:border-red-600 duration-300'>

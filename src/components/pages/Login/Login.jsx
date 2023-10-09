@@ -6,9 +6,10 @@ import toast, { Toaster } from "react-hot-toast";
 import Navbar from "../../shared/Navbar/Navbar";
 
 const Login = () => {
-    const { logIn, logInWithGoogle, logInWithGithub } = useContext(AuthContext);
+    const { user, logIn, logInWithGoogle, logInWithGithub } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate()
+    console.log(user)
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -24,7 +25,8 @@ const Login = () => {
                 toast.success('Successfully logged in!')
             })
             .catch(error => {
-                console.log(error)
+                console.log(error);
+                toast.error('Incorrect email or password')
             })
 
     }
@@ -35,11 +37,11 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 navigate(location?.state ? location.state : '/')
-                alert('Successfully login with google')
+                toast.success('Successfully login with Google')
             })
             .catch(error => {
                 console.log(error)
-                alert('Login failed')
+                toast.error('Login failed')
             })
     }
 
@@ -48,9 +50,11 @@ const Login = () => {
         logInWithGithub()
             .then(result => {
                 console.log(result.user)
+                toast.success('Successfully login with Github')
             })
             .catch(error => {
                 console.log(error)
+                toast.error('Login failed')
             })
 
     }

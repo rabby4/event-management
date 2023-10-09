@@ -11,6 +11,7 @@ import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Contact from "../pages/Contact/Contact";
 
 
 
@@ -34,8 +35,12 @@ const Router = createBrowserRouter([
                 element: <Blog></Blog>
             },
             {
+                path: '/contact',
+                element: <PrivateRoute><Contact></Contact></PrivateRoute>
+            },
+            {
                 path: '/events',
-                element: <Events></Events>,
+                element: <PrivateRoute><Events></Events></PrivateRoute>,
                 loader: () => fetch('/event.json')
             },
             {

@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
+import Swal from 'sweetalert2'
 import Navbar from "../../shared/Navbar/Navbar";
 import { updateProfile } from "firebase/auth";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
@@ -25,19 +26,39 @@ const Register = () => {
         console.log(name, email, photo, password);
 
         if (password.length < 6) {
-            toast.error('Password should be at least 6 characters');
+            Swal.fire({
+                icon: 'error',
+                title: 'Registration Failed',
+                text: 'Password should be at least 6 characters',
+            })
             return
         } else if (!/(?=.*?[A-Z])/.test(password)) {
-            toast.error('Password should be at least one Uppercase');
+            Swal.fire({
+                icon: 'error',
+                title: 'Registration Failed',
+                text: 'Password should be at least one Uppercase',
+            })
             return;
         } else if (!/(?=.*?[a-z])/.test(password)) {
-            toast.error('Password should be at least one Lowercase');
+            Swal.fire({
+                icon: 'error',
+                title: 'Registration Failed',
+                text: 'Password should be at least one Lowercase',
+            })
             return;
         } else if (!/(?=.*?[0-9])/.test(password)) {
-            toast.error('Password should be at least one Number');
+            Swal.fire({
+                icon: 'error',
+                title: 'Registration Failed',
+                text: 'Password should be at least one Number',
+            })
             return;
         } else if (!/(?=.*?[#?!@$%^&*-])/.test(password)) {
-            toast.error('Password should be at least one special character');
+            Swal.fire({
+                icon: 'error',
+                title: 'Registration Failed',
+                text: 'Password should be at least one special character',
+            })
             return;
         }
 
@@ -49,14 +70,25 @@ const Register = () => {
                     photoURL: photo
                 })
                     .then(() => {
-                        window.location.reload(),
-                            navigate(location?.state ? location.state : '/'),
-                            toast.success('Registration Successful!');
+                        navigate(location?.state ? location.state : '/'),
+                            window.location.reload()
+
+                        // toast.success('Registration Successful!');
 
                     })
+                Swal.fire(
+                    'Good job!',
+                    'Registration Successful!',
+                    'success'
+                )
             })
             .catch(error => {
                 console.log(error)
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Registration Failed',
+                    text: 'The email already in use',
+                })
             })
     }
 

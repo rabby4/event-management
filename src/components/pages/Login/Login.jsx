@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
-import toast, { Toaster } from "react-hot-toast";
+import Swal from 'sweetalert2'
 import Navbar from "../../shared/Navbar/Navbar";
 
 const Login = () => {
@@ -22,11 +22,19 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 navigate(location?.state ? location.state : '/')
-                toast.success('Successfully logged in!')
+                Swal.fire(
+                    'Good job!',
+                    'Logged in successful!',
+                    'success'
+                )
             })
             .catch(error => {
                 console.log(error);
-                toast.error('Incorrect email or password')
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'You entered wrong email and password!',
+                })
             })
 
     }
@@ -37,11 +45,18 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 navigate(location?.state ? location.state : '/')
-                toast.success('Successfully login with Google')
+                Swal.fire(
+                    'Good job!',
+                    'Successfully login with Google',
+                    'success'
+                )
             })
             .catch(error => {
                 console.log(error)
-                toast.error('Login failed')
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Login failed',
+                })
             })
     }
 
@@ -50,11 +65,18 @@ const Login = () => {
         logInWithGithub()
             .then(result => {
                 console.log(result.user)
-                toast.success('Successfully login with Github')
+                Swal.fire(
+                    'Good job!',
+                    'Successfully login with Github',
+                    'success'
+                )
             })
             .catch(error => {
                 console.log(error)
-                toast.error('Login failed')
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Login failed',
+                })
             })
 
     }
@@ -98,7 +120,6 @@ const Login = () => {
                         </button>
                     </div>
                 </div>
-                <Toaster></Toaster>
             </div>
         </>
 

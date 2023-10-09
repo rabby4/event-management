@@ -40,10 +40,10 @@ const Home = () => {
                     <h5 className="text-red-600 text-center text-3xl font-semibold mb-4">Event</h5>
                     <h2 className="text-5xl text-center font-bold mb-16 uppercase italic">Upcoming events</h2>
                 </div>
-                <div className="grid grid-cols-3 gap-10">
+                <div className="grid grid-cols-3 gap-10" >
                     {
                         events.map(event => <div key={event.id}>
-                            <div className="card card-compact border border-gray-200">
+                            <div className="card card-compact border border-gray-200" data-aos="fade-up">
                                 <figure><img className="h-60" src={event.img} alt="" /></figure>
                                 <div className="card-body">
                                     <div className="flex gap-5">

@@ -65,6 +65,7 @@ const Login = () => {
         logInWithGithub()
             .then(result => {
                 console.log(result.user)
+                navigate(location?.state ? location.state : '/')
                 Swal.fire(
                     'Good job!',
                     'Successfully login with Github',

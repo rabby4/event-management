@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import Swal from 'sweetalert2'
 import Navbar from "../../shared/Navbar/Navbar";
 import { updateProfile } from "firebase/auth";
@@ -70,11 +70,7 @@ const Register = () => {
                     photoURL: photo
                 })
                     .then(() => {
-                        navigate(location?.state ? location.state : '/'),
-                            window.location.reload()
-
-                        // toast.success('Registration Successful!');
-
+                        navigate(location?.state ? location.state : '/')
                     })
                 Swal.fire(
                     'Good job!',
